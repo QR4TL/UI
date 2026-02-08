@@ -18,7 +18,7 @@ local frame = Instance.new("Frame")
 frame.Size = UDim2.new(0, 500, 0, 400)
 frame.AnchorPoint = Vector2.new(0.5, 0.5)
 frame.Position = UDim2.new(0.5, 0, 0.5, 0)
-frame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+frame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 frame.ZIndex = 1
 frame.Active = true
 frame.Parent = screenGui
@@ -49,7 +49,7 @@ corner.Parent = frame
 
 local stroke = Instance.new("UIStroke")
 stroke.Thickness = 1.5
-stroke.Color = Color3.fromRGB(255, 255, 255)
+stroke.Color = Color3.fromRGB(0, 0, 0)
 stroke.Parent = frame
 
 local topBarContainer = Instance.new("Frame")
@@ -66,18 +66,18 @@ mask.Parent = topBarContainer
 
 local topBar = Instance.new("Frame")
 topBar.Size = UDim2.new(1, 0, 2, 0)
-topBar.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+topBar.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
 topBar.Parent = mask
 
 local title = Instance.new("TextLabel")
 title.Size = UDim2.new(0, 100, 1, 0)
-title.Position = UDim2.new(0, 27, -0.25, 0)
+title.Position = UDim2.new(0, 5, -0.25, 0)
 title.BackgroundTransparency = 1
 title.Text = "QR4TL Hub"
 title.TextXAlignment = Enum.TextXAlignment.Left
-title.TextColor3 = Color3.fromRGB(220, 220, 220)
-title.Font = Enum.Font.RobotoCondensed
-title.TextSize = 14
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.Font = Enum.Font.GothamBold
+title.TextSize = 20
 title.Parent = topBar
 
 local topCorner = Instance.new("UICorner")
@@ -87,14 +87,14 @@ topCorner.Parent = topBar
 local topBarStroke = Instance.new("Frame")
 topBarStroke.Size = UDim2.new(1, 0, 0, 1)
 topBarStroke.Position = UDim2.new(0, 0, 1, -1)
-topBarStroke.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+topBarStroke.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 topBarStroke.BorderSizePixel = 0
 topBarStroke.Parent = topBarContainer
 
 local line = Instance.new("Frame")
 line.Size = UDim2.new(0, 1, 1, 0)
 line.Position = UDim2.new(0, 112, 0, 0)
-line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+line.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 line.BorderSizePixel = 0
 line.Parent = topBar
 
@@ -117,8 +117,8 @@ for _, name in ipairs(tabNames) do
     tab.BackgroundTransparency = 1
     tab.Text = name
     tab.TextColor3 = name == activeTab and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(180, 180, 180)
-    tab.Font = Enum.Font.RobotoCondensed
-    tab.TextSize = 14
+    tab.Font = Enum.Font.GothamBold
+    tab.TextSize = 20
     tab.Parent = tabsContainer
 
     local underline = Instance.new("Frame")
