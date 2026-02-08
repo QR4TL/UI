@@ -1,2 +1,2 @@
-# QR4TL-s-UI
-My first UI.
+Made by myself.
+Pretty shit but I'm proud and it is also my first UI.
